@@ -13,4 +13,7 @@
 
 body {
   font-size: 1.6rem;
+  background-image: url('../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
