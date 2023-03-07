@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  max-width: 132rem;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  margin-top: 20rem;
+  border: 10px solid #621b00;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
