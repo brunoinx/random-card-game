@@ -1,15 +1,26 @@
 import { FormEvent, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import styles from './styles.module.css';
 
 export function Home() {
   const [input, setInput] = useState('');
 
+  const navigate = useNavigate();
+
   function handleSubmitToLocalStorage(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
+    if (!input) {
+      alert('Ops! Primeiro digite seu nome');
+      return null;
+    }
+
     window.localStorage.setItem('name', input);
     alert('Seu nome foi salvo com sucesso');
+
+    navigate('/game');
+    setInput('');
   }
 
   return (
