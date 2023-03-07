@@ -1,9 +1,31 @@
+import { FormEvent, useState } from 'react';
+import { Button } from '../../components/Button';
 import styles from './styles.module.css';
 
 export function Home() {
+  const [input, setInput] = useState('');
+
+  function handleSubmitToLocalStorage(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    window.localStorage.setItem('name', input);
+    alert('Seu nome foi salvo com sucesso');
+  }
+
   return (
     <main className={styles.container}>
-      <h2 className={styles.title}>Deck de cartas</h2>
+      <h2 className={styles.title}>Baralho de cartas aleatórias</h2>
+
+      <form className={styles.form} onSubmit={handleSubmitToLocalStorage}>
+        <input
+          type="text"
+          placeholder="Digite seu nome"
+          className={styles.input}
+          value={input}
+          onChange={e => setInput(e.target.value)}
+        />
+        <Button name="Ver cartas" type="submit" />
+      </form>
     </main>
   );
 }
