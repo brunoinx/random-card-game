@@ -1,7 +1,9 @@
 import { FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '../../components/Button';
 import styles from './styles.module.css';
+
+import { Button } from '../../components/Button';
+import { inputNameKey } from '../../storage/keys';
 
 export function Home() {
   const [input, setInput] = useState('');
@@ -16,7 +18,7 @@ export function Home() {
       return null;
     }
 
-    window.localStorage.setItem('name', input);
+    window.localStorage.setItem(inputNameKey, input);
     alert('Seu nome foi salvo com sucesso');
 
     navigate('/game');
