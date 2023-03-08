@@ -22,7 +22,7 @@ Para executar o app em sua máquina, leia os pré-requisitos e siga os passos ab
 
 * Node e npm | [Instale-os nesse link](https://nodejs.org/pt-br/)
 
-### Installation
+### Instalação
 
 1. Clone esse repositório
 
