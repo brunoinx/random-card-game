@@ -1,0 +1,41 @@
+.container {
+  background-color: #6b7280;
+  border-radius: 1rem;
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container:hover {
+  opacity: 0.8;
+}
+
+.img {
+  width: 19rem;
+  height: 28rem;
+}
+
+.content {
+  width: 100%;
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content > span {
+  font-size: 2.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.info > h4 {
+  font-size: 2rem;
+  color: white;
+}
+
+.info > span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
