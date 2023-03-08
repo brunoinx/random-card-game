@@ -6,7 +6,7 @@ export interface CardProps {
   name: string;
   description: string;
   image: string;
-  value: number | string; // De 0 a 10
+  value: number; // De 0 a 10
 }
 
 export function Card({ name, description, image: Image, value }: CardProps) {
@@ -17,13 +17,10 @@ export function Card({ name, description, image: Image, value }: CardProps) {
       <img src={Image} alt={name} className={styles.img} />
 
       <div className={styles.content}>
-        <div className={styles.info}>
-          <h4>{name}</h4>
+        <h4>{name}</h4>
 
-          <span>{description}</span>
-        </div>
-
-        <span>{valueCard}</span>
+        <span>{description}</span>
+        <span>valor: {valueCard}</span>
       </div>
     </div>
   );
