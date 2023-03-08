@@ -1,8 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/brunoinx/ random-playing-cards">
-    <img src=".github/cards.png" alt="Logo" width="80" height="80">
-  </a>
+  <img src=".github/cards.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Jogo de Cartas Aleatórias</h3>
 
@@ -46,12 +44,6 @@ npm install
 
 ```sh
 npm run dev
-```
-
-5. Entre pelo link abaixo:
-
-```sh
-http://localhost:5174
 ```
 
 ## Autor
