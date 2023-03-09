@@ -25,13 +25,13 @@ Para executar o app em sua máquina, leia os pré-requisitos e siga os passos ab
 1. Clone esse repositório
 
 ```sh
-git clone https://github.com/brunoinx/random-playing-cards.git
+git clone https://github.com/brunoinx/random-card-game.git
 ```
 
 2. Acesse o diretório do projeto:
 
 ```sh
-cd random-playing-cards
+cd random-card-game
 ```
 
 3. Instale as dependências do projeto:
